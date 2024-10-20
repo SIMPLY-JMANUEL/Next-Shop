@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductActivity"
+    tools:ignore="ExtraText">
+
+    <!-- TextView para mostrar el nombre de la aplicación -->
+    <!-- Cambia el tamaño de la fuente -->
+    android:gravity="center"
+    android:textColor="@android:color/black"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView para el nombre del producto Captus -->
+
+    <!-- Imagen del producto Captus -->
+
+    <!-- Botón para seleccionar imagen -->
+
+    <!-- TextView para el nombre del producto Bonsai -->
+
+    <!-- Imagen del producto Bonsai -->
+
+    <!-- Botón para seleccionar imagen Bonsai -->
+
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewProductNameCaptus"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Captus"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppName" />
+
+    <ImageView
+        android:id="@+id/imageViewProductCaptus"
+        android:layout_width="150dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Imagen del Producto Captus"
+        android:src="@drawable/captus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductNameCaptus" />
+
+    <Button
+        android:id="@+id/buttonSelectImageCaptus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Seleccionar Imagen Captus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProductCaptus" />
+
+    <TextView
+        android:id="@+id/textViewProductNameBonsai"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Bonsai"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectImageCaptus" />
+
+    <ImageView
+        android:id="@+id/imageViewProductBonsai"
+        android:layout_width="150dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Imagen del Producto Bonsai"
+        android:src="@drawable/bonsai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductNameBonsai" />
+
+    <Button
+        android:id="@+id/buttonSelectImageBonsai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Seleccionar Imagen Bonsai"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProductBonsai"
+        tools:layout_editor_absoluteX="96dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
